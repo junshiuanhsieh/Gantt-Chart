@@ -4,6 +4,21 @@
 * Deployed 連結 : https://gantt-final-project.herokuapp.com/
 * 描述這個服務在做什麼
 提供甘特圖與行事曆兩項工具，可利用甘特圖進行團體專案規劃，並使用行事曆查看個人負責事項。
+* Before Compile: 
+    * Edit './backend/.env.defaults' add your own mongodb URL
+    * Install React related files by the following command:
+    ```
+    yarn
+    ```
+    * The server can be started by the command:
+    ```
+    npm run start
+    ```
+    * Test if client (React) is installed correctly by:
+    ```
+    npm run test
+    ```
+
 * 使用/操作方式 (含伺服器端以及使用者端)
     * 登入
         * 填寫姓名及密碼註冊或登入
