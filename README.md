@@ -10,11 +10,11 @@
     ```
     yarn
     ```
-    * The server can be started by the command:
+    * The server can be started by typing the command in './backend/':
     ```
     npm run start
     ```
-    * Test if client (React) is installed correctly by:
+    * The client can be started by the command:
     ```
     npm run test
     ```
