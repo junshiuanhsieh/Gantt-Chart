@@ -1,0 +1,302 @@
+*
+
+.gantt {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.gantt_leftpart {
+    width: 25vw;    
+    line-height: 25px;
+    padding-right: 20px;
+    border-right: 1px #dddddd solid;
+
+}
+
+.gantt_leftpart_edit:hover {
+    opacity: 1;
+}
+
+.timeline-container{
+    width: 75vw;
+    height: 100%;
+}
+
+.project_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 10px;
+    height: 70px;
+}
+
+.project_name{
+    padding: 0 20px;
+}
+
+li {
+    list-style: none;
+}
+
+button.x {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    opacity: 0.5;
+    margin-top: -2px !important;
+    height: 20px;
+}
+
+.x:hover {
+    border: none;
+    opacity: 1;
+}
+
+.x:focus {
+    outline: none;
+}
+
+ul.project_content {
+    padding-left: 30px;
+}
+
+.event_title {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom-style: solid;
+    border-width: 2px;
+}
+
+.event_content {
+    margin-top: 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-size: 18px;
+    height: 38px;
+
+}
+
+.progress_num {
+    display: inline;
+    position: absolute;
+    right: 0px;
+}
+
+.progress_edit {
+    display: inline;
+    position: absolute;
+    right: 0px;
+    opacity: 0.4;
+}
+
+.add_item {
+    font-size: 18px;
+    width: 180px;
+    margin: 8.5px 30px;
+    border: none;
+    color: black;
+    outline: none;
+    height: 22px;
+}
+
+.add_item:focus::placeholder{
+    transition: 0.5s;
+    color: #bbbbbb;
+}
+
+#add_event {
+    font-size: 18px;
+    font-weight: bold;
+    width: 200px;
+    margin-left: 30px;
+    border: none;
+    color: black;
+    outline: none;
+}
+
+#add_event:focus::placeholder {
+    transition: 0.5s;
+    color: #bbbbbb;
+
+}
+
+.item_name_edit{
+    opacity: 0.4;
+}
+
+.item_name_edit:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.item_info {
+    transition: 0.5s;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    border: solid gray 1.5px;
+}
+
+.details-container{
+    width: 150px;
+    padding-left: 5px;
+    font-size: medium;
+    background: white;
+    color: black;
+}
+
+/* .details-container input{
+    margin: 0;
+    font-size: 14px;
+    width: 40px;
+    color: black;
+    border: none;
+} */
+
+/* .details-container input:focus{
+    border: white 1px solid;
+    border-radius: 10%;
+} */
+
+::placeholder{
+    color: gray;
+    text-align: left;
+}
+
+.loadingimg {
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    position: absolute;
+}
+
+.password input,.username input{
+    padding: 8px 8px;
+    font-size: 20px;
+}
+
+.handle{
+    width:8px !important
+}
+
+.btn_clean{
+    font-size: 15px;
+    height: fit-content;
+    justify-self: end;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.event_name_edit {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.event_name_edit:hover {
+    opacity: 1;
+}
+
+.collabor {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 5px;
+}
+
+.collabor_name {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.collabor_name_deleted {
+    transition: 1s;
+    margin-left: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.collabor_name_deleted p {
+    text-decoration: line-through;
+}
+
+.collabor input {
+    margin-left: 10px;
+    width: 130px;
+    padding-bottom: 0%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px rgba(128, 128, 128, 0.726) solid;
+}
+
+.collabor input:focus {
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px rgba(128, 128, 128, 0.726) solid;
+}
+
+.trash {
+    margin: 5px; 
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.edit {
+
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.edit:hover {
+    opacity: 1;
+}
+
+.back_btn {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: rgb(85, 85, 85);
+    border: none;
+    color: #ffffff;
+    transition: all 0.4s;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+}
+
+  .back_btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+    font-size: 30px;
+  }
+  .back_btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .back_btn:hover span {
+    padding-right: 25px;
+  }
+  .back_btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
