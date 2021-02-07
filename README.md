@@ -1,7 +1,7 @@
-# Web Programming README 
+# README 
 
-* 專題題目名稱 : Gantt Chart
-* Deployed 連結 : https://gantt-final-project.herokuapp.com/
+* Project name : Gantt Chart
+* Deployed link : https://gantt-final-project.herokuapp.com/
 * 描述這個服務在做什麼
 提供甘特圖與行事曆兩項工具，可利用甘特圖進行團體專案規劃，並使用行事曆查看個人負責事項。
 * Before Compile: 
